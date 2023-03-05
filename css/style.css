@@ -33,13 +33,18 @@ div.background {
 	position: relative;
 }
 
-div.card-back {
+div.background > div {
 	position: absolute;
-	background-image: url(../images/bg-card-back.png);
 	aspect-ratio: calc(447 / 245);
-	width: 80%;
+	width: 75%;
+	max-width: 447px;
 	background-position: center;
 	background-size: cover;
+	color: var(--white);
+}
+
+div.card-back {
+	background-image: url(../images/bg-card-back.png);
 	top: 2rem;
 	right: 1rem;
 }
@@ -49,8 +54,45 @@ p.cvc {
 	right: 15%;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 0.75rem;
-	color: var(--white);
+	font-size: 0.625rem;
+}
+
+div.card-front {
+	background-image: url(../images/bg-card-front.png);
+	top: 50%;
+	left: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+div.card-front img {
+	width: 20%;
+}
+
+div.details-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+div.card-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 0.625rem;
+	letter-spacing: 1px;
+}
+
+p.card-number {
+	display: flex;
+	justify-content: space-between;
+	letter-spacing: 2px;
+}
+
+p.card-owner {
+	text-transform: uppercase;
 }
 
 footer {
