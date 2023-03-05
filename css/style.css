@@ -30,6 +30,27 @@ div.background {
 	background-position: center;
 	background-size: cover;
 	height: 240px;
+	position: relative;
+}
+
+div.card-back {
+	position: absolute;
+	background-image: url(../images/bg-card-back.png);
+	aspect-ratio: calc(447 / 245);
+	width: 80%;
+	background-position: center;
+	background-size: cover;
+	top: 2rem;
+	right: 1rem;
+}
+
+p.cvc {
+	position: absolute;
+	right: 15%;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0.75rem;
+	color: var(--white);
 }
 
 footer {
