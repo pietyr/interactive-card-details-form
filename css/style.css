@@ -24,6 +24,10 @@ p {
 	margin: 0;
 }
 
+.display-none {
+	display: none;
+}
+
 div.background {
 	background-image: url(../images/bg-main-mobile.png);
 	background-repeat: no-repeat;
@@ -93,6 +97,23 @@ p.card-number {
 
 p.card-owner {
 	text-transform: uppercase;
+}
+
+main {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 15vw 1.5rem;
+}
+
+form {
+	margin: 0 auto;
+	max-width: 360px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
 }
 
 footer {
